@@ -4,7 +4,7 @@ pipeline {
     stage('run') {
       steps {
         sh '''echo "test"
-pip -r requirements.txt
+pip install -r requirements.txt
 
 python run.py'''
       }
